@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hospital appoinment</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+function validateform()
+{
+	var fn=document.form["home"]["FIRST NAME"].value;
+
+	if (fn==null||fn=="") {
+		alert("first name cannot be blank")
+		return false;
+	}
+}
+
+</script>
+
+
+	
+</head>
+<body>
+	<div class="container">
+		 <div class="header">
+  <img src="logo.jfif" alt="logo">
+  <h1>Life Care hospital </h1>
+  <h2>Multi Speciality Hospital</h2>
+  <h3>Contact Us +91 96366 20000 / 01 | Medicare@hospital.com</h3>
+</div>
+
+<div class="link">
+<a href="home.html">HOME</a>
+<a href="about us.html">ABOUTUS</a>
+<a href="services.html">SERVICE</a>
+<a href="doctor.html">DOCTORS</a>
+<a href="contact.html">CONTACTUS</a>
+<a href="map.html">MAP</a>
+</div>
+<h2>MAKE AN APPOINMENT</h2>
+<div class="form">
+	<form name="home" method="post" onsubmit="validateform()">
+	<div><fieldset><legend>Personal Particulars</legend>
+				<label>FIRST NAME</label>
+				<input type="text" name="fname" size="30">
+			<br>
+			<br>
+				<label>LAST NAME</label>
+				<input type="text" name="pname" size="30">
+			<br>
+			<br>	
+				<label>MOBILE NO</label>
+				<input type="number" name="pname" size="30">
+				<br>
+			<br>
+  Gender<input type="radio" name="male"> male 
+       
+  <input type="radio" name="female"> female
+			<br>
+			<br>
+			<label>Age</label>
+			<select>name="age">
+				<option value="1yrs ">20-40</option>
+				<option value="2yrs ">40-60</option>
+				<option value="3yrs ">60-80</option>
+			</select>
+		<br>
+		<br>
+		<label>Appoinment date</label>
+				<input type="text" name="adname" size="30">
+<br>
+<br>
+</fieldset>
+<fieldset><legend>Address Details</legend>
+	<label>Enter City</label>
+				<input type="text" name="adname" size="25">
+				<label>Enter postal code</label>
+				<input type="text" name="adname" size="25">
+			</fieldset>
+
+<br>
+  <input type="Send" value="Send">
+	<input type="clear" value="clear">
+	<br>
+
+		
+	
+
+
+
+</div>
+
+	
+
+
+		
+		
+
+</body>
+</html>
